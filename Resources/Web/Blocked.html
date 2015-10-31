@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+
+        }
+        h1{
+
+            font-family: sans-serif;
+            text-align: center;
+            color: rgba(5, 5, 5, 0.91);
+            margin: auto auto 0px auto;
+            font-size: 45px;
+            border-collapse: collapse;
+        }
+        form.scr{
+
+            height: 600px;
+            width: 350px;
+            background-color: wheat;
+            margin: 8px auto auto auto;
+            border: 1px solid #b2c0af;
+            border-radius: 25px;
+            box-shadow: 0px 0px 7px 5px;
+
+        }
+        .result1{
+
+            width: 300px;
+            height:50px;
+            margin: 20px 20px 20px 23px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px ;
+            font-size: 20px;
+            text-align: center;
+            font-family: cursive;
+            border: 2px solid black;
+
+        }
+        table{
+            border-spacing: 25px;
+            background-color: inherit;
+
+        }
+        th{
+            border-radius: 10px;
+        }
+        td{
+            border-radius: 10px;
+        }
+        input:hover{
+             cursor: pointer;
+
+        }
+        .mc{
+            height: 50px;
+            width: 52px;
+            font-family: fantasy;
+            font-weight: normal;
+            border-radius: 10px;
+            font-size: large;
+            background-color: rgba(0, 0, 0, 0.78);
+            color: #c1c1c1;
+
+        }
+        .mc:hover{
+            background-color: rgba(0, 0, 0, 0.48);
+        }
+
+        .mr{
+            height: 50px;
+            width: 52px;
+            font-family: fantasy;
+            font-weight: normal;
+            border-radius: 10px;
+            font-size: large;
+            background-color: rgba(0, 0, 0, 0.78);
+            color: #c1c1c1;
+        }
+        .mr:hover{
+            background-color: rgba(0, 0, 0, 0.48);
+        }
+        .m2 {
+            height: 50px;
+            width: 52px;
+            font-family: fantasy;
+            font-weight: normal;
+            border-radius: 10px;
+            font-size: large;
+            background-color: rgba(0, 0, 0, 0.78);
+            color: #c1c1c1;
+        }
+        .m2:hover{
+            background-color: rgba(0, 0, 0, 0.48);
+        }
+        .m-{
+            height: 50px;
+            width: 52px;
+            font-family: fantasy;
+            font-weight: normal;
+            border-radius: 10px;
+            font-size: large;
+            background-color: rgba(0, 0, 0, 0.78);
+            color: #c1c1c1;
+        }
+        .m-:hover{
+            background-color: rgba(0, 0, 0, 0.48);
+        }
+        .c{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .c:hover{
+            background-color: rgba(0, 0, 0, 0.48);
+        }
+        .x{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .x:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+
+        .div{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .div:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .per{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .per:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .one{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .one:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .two{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .two:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .thr{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .thr:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .four{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .four:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .five{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .five:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .six{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .six:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .sev{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .sev:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .eig{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .eig:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .nine{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .nine:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .point{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .point:hover
+        {
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .zero{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 47px;
+            width: 128px;
+            font-family: cursive;
+        }
+        .zero:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .equals{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 120px;
+            width: 50px;
+            font-family: cursive;
+
+        }
+        .equals:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .plus{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .plus:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+        }
+        .minus{
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgba(125, 146, 193, 0.78);
+            font-weight: bold;
+            height: 45px;
+            width: 50px;
+            font-family: cursive;
+        }
+        .minus:hover{
+            background-color: rgba(59, 74, 118, 0.78);
+
+        }
+
+    </style>
+</head>
+<body>
+<hr>
+
+<form name="scr" class="scr ">
+    <input type="text" name="input" class="result1">
+    <table>
+        <tr>
+            <th> <input type="button" class="mr" value="MR"> </th>
+            <th> <input type="button" class="mc" value="MC"> </th>
+            <th> <input type="button" class="m-" value="M-"> </th>
+            <th> <input type="button" class="m2" value="MCR"> </th>
+
+        </tr>
+
+    </table>
+
+    <table>
+
+        <tr>
+
+            <td> <input type="button" class="c" value="C" onclick="scr.input.value = ''"> </td>
+            <td> <input type="button" class="x" value="*" onclick="scr.input.value += '*'"> </td>
+            <td> <input type="button" class="div" value="/" onclick="scr.input.value += '/'"> </td>
+            <td> <input type="button" class="per" value="%" onclick="scr.input.value += '%'">  </td>
+
+
+
+        </tr>
+        <tr>
+            <td> <input type="button" class="sev" value="7" onClick="scr.input.value += '7'"> </td>
+            <td> <input type="button" class="eig" value="8" onclick="scr.input.value += '8'"> </td>
+            <td> <input type="button" class="nine" value="9" onclick="scr.input.value += '9'"> </td>
+            <td> <input type="button" class="minus" value="-" onclick="scr.input.value += '-'"> </td>
+
+
+
+
+
+        </tr>
+        <tr>
+
+            <td><input type="button" class="four" value="4" onclick="scr.input.value += '4'"> </td>
+            <td><input type="button" class="five" value="5" onclick="scr.input.value += '5'"> </td>
+            <td><input type="button" class="six" value="6" onclick="scr.input.value += '6'"> </td>
+            <td><input type="button" class="plus" value="+" onclick="scr.input.value += '+'"> </td>
+
+        </tr>
+        <tr>
+            <td><input type="button" class="one" value="1" onclick="scr.input.value += '1'"> </td>
+            <td><input type="button" class="two" value="2" onclick="scr.input.value += '2'"> </td>
+            <td><input type="button" class="thr" value="3" onclick="scr.input.value += '3'"> </td>
+            <td rowspan="2"> <input type = "button" class = " equals " value=" = " OnClick = "result()" >
+            </td>
+
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="button" class="zero" value="0" onclick="scr.input.value += '0'"> </td>
+            <td><input type="button" class="point" value="." onclick="scr.input.value += '.'"> </td>
+        </tr>
+
+    </table>
+
+
+
+</form>
+<script>
+    function result(){
+    var answer = eval(scr.input.value);
+        scr.input.value = answer;
+        console.log();
+    }
+
+</script>
+</body>
+</html>
